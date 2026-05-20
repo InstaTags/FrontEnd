@@ -18,9 +18,9 @@
 	<a href="/" class="logo">InstaTags</a>
 
 	<button class="mobile-toggle" onclick={toggleMobileMenu} aria-label="Toggle menu">
-		<span class="bar" class:open={mobileMenuOpen}></span>
-		<span class="bar" class:open={mobileMenuOpen}></span>
-		<span class="bar" class:open={mobileMenuOpen}></span>
+		<div class="bar" class:open={mobileMenuOpen}></div>
+		<div class="bar" class:open={mobileMenuOpen}></div>
+		<div class="bar" class:open={mobileMenuOpen}></div>
 	</button>
 
 	<div class="nav-links" class:show={mobileMenuOpen}>

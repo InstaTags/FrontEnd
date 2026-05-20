@@ -1,17 +1,19 @@
 <script lang="ts">
 	import SectionHeader from "$lib/components/SectionHeader.svelte";
     import ImageUploader from "$lib/components/ImageUploader.svelte";
+
+    let uploadSuccess = false;
 </script>
 
 <section class="upload">
-	<SectionHeader text="Upload Image"/>
-    <ImageUploader />
+	<SectionHeader text={uploadSuccess ? "Upload Result" : "Upload Image"}/>
+    <ImageUploader bind:uploadSuccess />
 </section>
 
 <style>
 	.upload {
         width: 100%;
-		height: 100vh;
+		min-height: 100vh;
 		display: flex;
         flex-direction: column;
 		align-items: center;
