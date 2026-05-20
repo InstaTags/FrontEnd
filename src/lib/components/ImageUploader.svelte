@@ -237,6 +237,9 @@
         {#if status}
             <p class="status">{status}</p>
         {/if}
+        {#if file && !loading && !uploadSuccess}
+            <button class="primary-btn reset-btn" on:click={resetUploader}>Upload Another Image</button>
+        {/if}
     {/if}
 </div>
 
@@ -258,7 +261,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 4rem 7rem;
+        padding: 8rem 12rem;
         border-radius: 1rem;
         transition: all 0.3s ease;
         gap: 1.5rem;
@@ -332,7 +335,7 @@
     .preview-image {
         max-width: 100%;
         max-height: 300px;
-        border-radius: 0.5rem;
+        border-radius: 0.75rem;
         object-fit: contain;
     }
 
