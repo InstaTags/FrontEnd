@@ -84,7 +84,11 @@
 	<div class="how-to-use-inner-container">
 		<div class="how-to-use-switcher-container">
 			<div class="how-to-use-switcher-button" style="transform: translateX({extension ? '0' : '135px'}); transition: transform 0.3s ease;"></div>
+			<!-- svelte-ignore a11y_click_events_have_key_events -->
+			<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
 			<p onclick={() => extension = true} style="color: {extension ? '#f7f7f7' : '#c2c2c2'};">Extension</p>
+			<!-- svelte-ignore a11y_click_events_have_key_events -->
+			<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
 			<p onclick={() => extension = false} style="color: {!extension ? '#f7f7f7' : '#c2c2c2'};">Web</p>
 		</div>
 
