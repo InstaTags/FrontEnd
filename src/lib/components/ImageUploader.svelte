@@ -1,5 +1,6 @@
 <script lang="ts">
     import Toast from "./Toast.svelte";
+    import { PUBLIC_API_BASE_URL } from '$env/static/public';
 
     let fileInputRef: HTMLInputElement;
     let file: File | null = null;
@@ -90,7 +91,7 @@
             const formData = new FormData();
             formData.append("image", file);
 
-            const uploadRes = await fetch("/api/v1/upload/send", {
+            const uploadRes = await fetch(`${PUBLIC_API_BASE_URL}/api/v1/upload/send`, {
                 method: "POST",
                 body: formData,
             });
