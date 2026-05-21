@@ -1,5 +1,13 @@
 <script lang="ts">
-    let { quote, name, title }: { quote: string; name: string; title: string } = $props();
+    let { 
+        quote, 
+        name, 
+        title 
+    }: { 
+        quote: string; 
+        name: string; 
+        title: string 
+    } = $props();
 </script>
 
 <div class="testimonial-card">

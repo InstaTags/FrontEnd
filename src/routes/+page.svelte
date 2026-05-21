@@ -1,8 +1,27 @@
 <script lang="ts">
+	import FeatureCard from './../lib/components/FeatureCard.svelte';
 	import SectionHeader from "$lib/components/SectionHeader.svelte";
 	import TestimonialCard from "$lib/components/TestimonialCard.svelte";
 	import Carousel from "$lib/components/Carousel.svelte";
 	import FaqContainer from "$lib/components/FaqContainer.svelte";
+
+	const features = [
+		{
+			img : "/features/1.png",
+			title: "Instant Generation",
+			desc: "Upload your image and generate relevant hashtags in seconds. No research, no guesswork, just fast and optimized results.",
+		},
+		{
+			img : "/features/2.png",
+			title: "Smart & Relevant",
+			desc: "Our system analyzes your content to provide hashtags tailored to your niche, helping improve visibility and engagement.",
+		},
+		{
+			img : "/features/3.png",
+			title: "Focus on Creativity",
+			desc: "Spend less time thinking about tags and more time creating content that connects with your audience. We handle the optimization so you can stay in your creative flow.",
+		},
+	]
 
 	const testimonials = [
 		{
@@ -52,7 +71,19 @@
 </section>
 
 <section class="features">
-	
+	<SectionHeader text="Everything You Need to Tag Smarter" />
+
+	<div class="features-card-container">
+		{#each features as feature, i}
+			<FeatureCard
+				img={feature.img}
+				title={feature.title}
+				desc={feature.desc}
+				imgRight={i % 2 === 1}
+			/>
+		{/each}
+	</div>
+
 </section>
 
 <section class="testimonials">
@@ -208,5 +239,13 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
+
+	.features-card-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		gap: 3rem;
 	}
 </style>
