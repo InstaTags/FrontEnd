@@ -33,32 +33,53 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 50vh;
+        gap: 2.5rem;
         width: 60%;
-        border: 0.01rem solid var(--gray-700);
+        max-width: 60rem;
+        min-height: 20rem;
+        border: 1px solid var(--gray-700);
         background: linear-gradient(135deg, #36363660, #1c1c1c60);
-        padding: 1rem 3rem;
+        padding: 2.25rem 3rem;
         border-radius: 1.5rem;
+        transition:
+            border-color 0.4s ease,
+            transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .feature-card:hover {
+        border-color: var(--gray-500);
+        transform: translateY(-0.25rem);
     }
 
     .feature-card img {
-        height: 80%;
+        height: 16rem;
+        width: auto;
+        max-width: 45%;
+        object-fit: contain;
         filter: saturate(0) contrast(1.05) opacity(0.6);
         border-radius: 0.75rem;
+        transition:
+            filter 0.5s ease,
+            transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .feature-card:hover img {
+        filter: saturate(1) contrast(1.02) opacity(1);
+        transform: scale(1.02);
     }
 
     .feature-card-text-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 50%;
-        height: 100%;
-        gap: 1.5rem;
+        flex: 1;
+        gap: 1.25rem;
     }
 
     .feature-card-title {
         font-family: LaurentianStd-It;
-        font-size: 2.5rem;
+        font-size: 2rem;
+        line-height: 1.1;
         background: linear-gradient(
             135deg,
             var(--white),
@@ -76,8 +97,8 @@
     }
 
     .feature-card-desc {
-        font-size: 1.15rem;
-        line-height: 1.6rem;
-        color: var(--gray-300)
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: var(--gray-300);
     }
 </style>

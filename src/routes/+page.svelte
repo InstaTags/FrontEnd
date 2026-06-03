@@ -63,7 +63,7 @@
 		</p>
 		<div class="hero-btn-container">
 			<a href="/upload" class="primary-btn">Try Now</a>
-			<a href="/thank-you" class="outline-btn">Install For Chrome</a>
+			<a href="/thank-you" class="outline-btn">Install for Chrome</a>
 		</div>
 	</div>
 
@@ -160,7 +160,7 @@
 		position: relative;
 		height: 100vh;
 		padding-top: 112px;
-		background: 
+		background:
 			linear-gradient(#67E5F300 83%, #68e5f31a),
 			radial-gradient(ellipse 75% 130% at 50% 100%, hsla(186, 85%, 68%, 0.2), transparent 60%),
 			radial-gradient(ellipse 60% 75% at 50% 100%, hsla(42, 100%, 85%, 0.15), transparent 50%),
@@ -183,19 +183,23 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		gap: 1rem;
+		gap: 1.5rem;
 		text-align: center;
 	}
 
 	.hero-header {
 		font-family: LaurentianStd-It;
 		font-size: 3.5rem;
+		line-height: 1.06;
+		letter-spacing: -0.01em;
 	}
 
 	.hero-desc {
 		font-size: 1.25rem;
-		font-weight: 300;
-		width: 62.5%;
+		font-weight: 400;
+		width: 45%;
+		line-height: 1.6;
+		color: var(--gray-200);
 	}
 
 	.hero-btn-container {
@@ -205,14 +209,41 @@
 	}
 
 	.features {
-		height: 200vh;
-		background: 
+		padding: 7rem 0;
+		gap: 3rem;
+		background:
 			linear-gradient(#67E5F31a, #67E5F300 17%),
 			radial-gradient(ellipse 75% 60% at 50% 0%, hsla(186, 85%, 68%, 0.2), transparent 60%),
 			radial-gradient(ellipse 60% 35% at 50% 0%, hsla(42, 100%, 85%, 0.15), transparent 50%),
 			radial-gradient(ellipse 20% 10% at 50% 0%, hsla(57, 100%, 71%, 0.05), transparent 70%),
 			linear-gradient(#3A4E7200 83%, #3A4E7226)
 		;
+	}
+
+	.features-card-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 3rem;
+	}
+
+	.hero-header,
+	.hero-desc,
+	.hero-btn-container {
+		animation: rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+	}
+
+	.hero-header { 
+		animation-delay: 0.08s; 
+	}
+
+	.hero-desc { 
+		animation-delay: 0.16s; 
+	}
+
+	.hero-btn-container { 
+		animation-delay: 0.24s; 
 	}
 
 	.testimonials {
@@ -239,13 +270,5 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-	}
-
-	.features-card-container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		gap: 3rem;
 	}
 </style>
