@@ -60,12 +60,7 @@
 
 		.hero-btn-container {
 			flex-direction: column;
-			width: 100%;
-		}
-
-		.hero-btn-container a {
-			width: 100%;
-			justify-content: center;
+			align-items: center;
 		}
 	}
 </style>

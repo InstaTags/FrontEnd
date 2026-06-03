@@ -340,13 +340,11 @@
 
 		.hero-btn-container {
 			flex-direction: column;
-			width: 100%;
-			padding: 0 1.5rem;
+			align-items: center;
 		}
 
-		.hero-btn-container a {
-			width: 100%;
-			justify-content: center;
+		.hero img {
+			scale: 1.1;
 		}
 	}
 </style>

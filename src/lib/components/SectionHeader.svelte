@@ -23,6 +23,7 @@
     .section-header h1 {
       font-family: LaurentianStd-It;
       font-size: 3.15rem;
+      text-align: center;
     }
 
     @media (max-width: 768px) {
@@ -42,11 +43,12 @@
 
     @media (max-width: 378px) {
       .section-header hr {
-        width: 1rem;
+        display: none;
       }
 
       .section-header h1 {
-        font-size: 1.65rem;
+        font-size: 1.55rem;
+        text-wrap: balance;
       }
     }
 </style>

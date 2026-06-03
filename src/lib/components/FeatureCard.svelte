@@ -139,6 +139,7 @@
 
     @media (max-width: 378px) {
         .feature-card {
+            width: 80%;
             padding: 1.5rem 1.25rem;
         }
 

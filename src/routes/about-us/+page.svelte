@@ -133,6 +133,11 @@
 			gap: 3rem;
 		}
 
+		.about-us-header-desc-container {
+			width: 100%;
+			align-items: center;
+		}
+
 		.about-us-desc {
 			width: 90%;
 			max-width: 36rem;
@@ -140,9 +145,9 @@
 		}
 
 		.about-us-stats-container {
-			flex-wrap: wrap;
-			justify-content: center;
-			gap: 2rem;
+			width: 100%;
+			justify-content: space-evenly;
+			gap: 0;
 		}
 
 		#ourvision,
@@ -158,12 +163,12 @@
 			padding-top: 7rem;
 		}
 
-		.about-us-stats-container {
-			gap: 1.5rem;
+		.about-us-stat-number {
+			font-size: 1.2rem;
 		}
 
-		.about-us-stat-number {
-			font-size: 1.45rem;
+		.about-us-stat-desc {
+			font-size: 0.8rem;
 		}
 	}
 </style>
