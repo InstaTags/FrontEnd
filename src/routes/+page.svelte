@@ -89,7 +89,15 @@
 <section class="testimonials">
 	<SectionHeader text="Trusted by Industry Leaders" />
 	<div class="carousel-container">
-		<Carousel perPage={1} loop={true} autoplay={5000} dots={true} controls={true} duration={300}>
+		<Carousel 
+			perPage={1} 
+			loop={true} 
+			autoplay={5000} 
+			dots={true} 
+			controls={true} 
+			duration={300}
+			cardWidth="550px"
+		>
 			{#each testimonials as testimonial}
 				<TestimonialCard
 					quote={testimonial.quote}
