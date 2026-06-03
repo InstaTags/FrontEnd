@@ -54,6 +54,7 @@
         align-items: flex-start;
         justify-content: flex-start;
         padding: 1.5rem;
+        gap: 0.4rem;
         background-color: #2D2D2D80;
         border-radius: 0 0 2rem 2rem;
     }
@@ -61,17 +62,20 @@
     .how-to-use-step {
         font-family: LaurentianStd-It;
         font-size: 1.2rem;
+        line-height: 1.25;
     }
 
     .how-to-use-step-title {
         font-weight: 500;
         font-size: 1.025rem;
+        line-height: 1.45;
     }
 
     .how-to-use-step-desc {
         font-weight: 300;
         font-size: 0.9rem;
         color: var(--gray-200);
+        line-height: 1.65;
     }
 
     @media (max-width: 768px) {

@@ -31,6 +31,7 @@
 	.cta-header {
 		font-family: LaurentianStd-It;
 		font-size: 3rem;
+		line-height: 1.1;
 	}
 
 	.cta-btn-container {

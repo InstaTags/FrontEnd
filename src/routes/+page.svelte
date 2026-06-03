@@ -255,7 +255,7 @@
 	}
 
 	.testimonials {
-		padding: 7rem 0;
+		padding: 10rem 0;
 		background-color: #3A4E7226;
 	}
 

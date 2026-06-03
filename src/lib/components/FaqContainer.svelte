@@ -52,6 +52,7 @@
         box-shadow: var(--general-shadow);
         transition: all 0.3s ease;
         font-size: 1.15rem;
+        line-height: 1.4;
     }
 
     .faq-btn {
@@ -68,6 +69,13 @@
         display: flex;
         width: 45%;
         gap: 1.25rem;
+    }
+
+    .faq-answer {
+        font-size: 0.975rem;
+        line-height: 1.65;
+        color: var(--gray-300);
+        font-weight: 300;
     }
 
     .vertical-line {

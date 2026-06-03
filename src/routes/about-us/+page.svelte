@@ -77,6 +77,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		gap: 1rem;
 	}
 
 	.about-us-desc {
@@ -84,6 +85,7 @@
 		text-align: center;
 		font-weight: 300;
 		font-size: 1.2rem;
+		line-height: 1.6;
 	}
 
 	.about-us-stats-container {
@@ -95,16 +97,19 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		gap: 0.2rem;
 	}
 
 	.about-us-stat-number {
 		font-weight: 600;
 		font-size: 1.65rem;
+		line-height: 1.2;
 	}
 
 	.about-us-stat-desc {
 		font-weight: 300;
 		font-size: 1.1rem;
+		line-height: 1.35;
 	}
 
 	#ourvision, #ourmission {
@@ -113,6 +118,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		gap: 1.5rem;
 	}
 
 	#ourvision {

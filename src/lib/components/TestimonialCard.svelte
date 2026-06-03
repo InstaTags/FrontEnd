@@ -57,6 +57,7 @@
     .quote {
         font-size: 0.935rem;
         font-weight: 400;
+        line-height: 1.65;
     }
 
     .person-container {
@@ -68,17 +69,20 @@
     .person-inner-container {
         display: flex;
         flex-direction: column;
+        gap: 0.2rem;
     }
 
     .person-name {
         font-size: 1.49rem;
         font-family: LaurentianStd-It;
+        line-height: 1.2;
     }
 
     .person-title {
         font-size: 0.85rem;
         color: var(--gray-200);
         font-weight: 300;
+        line-height: 1.5;
     }
 
     @media (max-width: 768px) {

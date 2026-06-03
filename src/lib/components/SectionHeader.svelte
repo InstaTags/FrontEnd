@@ -23,6 +23,7 @@
     .section-header h1 {
       font-family: LaurentianStd-It;
       font-size: 3.15rem;
+      line-height: 1.1;
       text-align: center;
     }
 
