@@ -94,7 +94,7 @@
 
 		<div class="carousel-container">
 			{#key extension}
-			<Carousel perPage={1} visibleCards={5} cardWidth="350px" loop={true} autoplay={0} dots={true} controls={true} duration={300} startIndex={0} draggable={false}>
+			<Carousel perPage={1} visibleCards={5} cardWidth="350px" loop={true} autoplay={0} dots={true} controls={true} duration={300} startIndex={0}>
 				{#each extension ? extensionSteps : webSteps as step}
 					<HowToUseCard
 						step={step.step} 
