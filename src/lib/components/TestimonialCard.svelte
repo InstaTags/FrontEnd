@@ -80,4 +80,32 @@
         color: var(--gray-200);
         font-weight: 300;
     }
+
+    @media (max-width: 768px) {
+        .testimonial-card {
+            width: 85vw;
+            max-width: 467px;
+            height: auto;
+        }
+
+        .quote-container {
+            height: auto;
+            min-height: 160px;
+        }
+    }
+
+    @media (max-width: 378px) {
+        .testimonial-card {
+            padding: 1.25rem;
+            gap: 1.25rem;
+        }
+
+        .quote {
+            font-size: 0.9rem;
+        }
+
+        .person-name {
+            font-size: 1.3rem;
+        }
+    }
 </style>

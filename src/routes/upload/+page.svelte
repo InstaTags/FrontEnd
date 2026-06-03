@@ -23,4 +23,10 @@
         gap: 1.5rem;
         text-align: center;
 	}
+
+	@media (max-width: 768px) {
+		.upload {
+			padding: 7rem 1.5rem 4rem;
+		}
+	}
 </style>

@@ -37,4 +37,35 @@
 		align-items: center;
 		gap: 1rem;
 	}
+
+	@media (max-width: 768px) {
+		.thank-you {
+			padding: 7rem 1.5rem 4rem;
+		}
+
+		.hero-header {
+			font-size: 2.25rem;
+		}
+
+		.hero-btn-container {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+
+	@media (max-width: 378px) {
+		.hero-header {
+			font-size: 2rem;
+		}
+
+		.hero-btn-container {
+			flex-direction: column;
+			width: 100%;
+		}
+
+		.hero-btn-container a {
+			width: 100%;
+			justify-content: center;
+		}
+	}
 </style>

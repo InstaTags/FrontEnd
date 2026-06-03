@@ -73,4 +73,11 @@
         font-size: 0.9rem;
         color: var(--gray-200);
     }
+
+    @media (max-width: 768px) {
+        .how-to-use-card {
+            width: 85vw;
+            max-width: 350px;
+        }
+    }
 </style>

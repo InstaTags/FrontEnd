@@ -136,6 +136,7 @@
 
 		.navbar {
 			height: 96px;
+			padding: 1.5rem;
 		}
 
 		.navbar.show {
@@ -152,7 +153,7 @@
 			position: fixed;
 			top: 0;
 			right: 100%;
-			width: 40%;
+			width: 60%;
 			height: 100vh;
 			flex-direction: column;
 			background-color: #1c1c1c80;
@@ -162,6 +163,12 @@
 
 		.nav-links.show {
 			right: 0;
+		}
+	}
+
+	@media (max-width: 378px) {
+		.nav-links {
+			width: 75%;
 		}
 	}
 </style>

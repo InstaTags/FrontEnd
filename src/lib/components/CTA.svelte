@@ -38,5 +38,38 @@
 		gap: 1rem;
 		z-index: 1;
 	}
-	
+
+	@media (max-width: 768px) {
+		.cta {
+			height: 360px;
+			gap: 1.5rem;
+			padding: 0 1.5rem;
+		}
+
+		.cta-header {
+			font-size: 2.25rem;
+			text-align: center;
+		}
+
+		.cta-btn-container {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+
+	@media (max-width: 378px) {
+		.cta-header {
+			font-size: 1.85rem;
+		}
+
+		.cta-btn-container {
+			flex-direction: column;
+			width: 100%;
+		}
+
+		.cta-btn-container a {
+			width: 100%;
+			justify-content: center;
+		}
+	}
 </style>

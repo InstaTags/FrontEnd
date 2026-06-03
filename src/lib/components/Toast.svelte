@@ -132,4 +132,12 @@
         background: rgba(255, 255, 255, 0.08);
         color: var(--gray-100);
     }
+
+    @media (max-width: 378px) {
+        .toast {
+            min-width: 0;
+            width: calc(100vw - 2rem);
+            max-width: calc(100vw - 2rem);
+        }
+    }
 </style>

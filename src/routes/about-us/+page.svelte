@@ -124,4 +124,46 @@
 	#ourmission {
 		background: linear-gradient(#1F2835, #1F283500 17%);
 	}
+
+	@media (max-width: 768px) {
+		#about-us {
+			height: auto;
+			min-height: 100vh;
+			padding: 8rem 1.5rem 4rem;
+			gap: 3rem;
+		}
+
+		.about-us-desc {
+			width: 90%;
+			max-width: 36rem;
+			font-size: 1.05rem;
+		}
+
+		.about-us-stats-container {
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 2rem;
+		}
+
+		#ourvision,
+		#ourmission {
+			height: auto;
+			min-height: 70vh;
+			padding: 4rem 1.5rem;
+		}
+	}
+
+	@media (max-width: 378px) {
+		#about-us {
+			padding-top: 7rem;
+		}
+
+		.about-us-stats-container {
+			gap: 1.5rem;
+		}
+
+		.about-us-stat-number {
+			font-size: 1.45rem;
+		}
+	}
 </style>

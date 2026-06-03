@@ -10,10 +10,24 @@
         desc: string,
         imgRight?: boolean
     } = $props();
+
+    let isMobile = $state(false);
+
+    $effect(() => {
+        const mq = window.matchMedia('(max-width: 768px)');
+        const update = () => (isMobile = mq.matches);
+        update();
+        mq.addEventListener('change', update);
+        return () => mq.removeEventListener('change', update);
+    });
 </script>
 
 <div class="feature-card">
-    {#if imgRight}
+    {#if isMobile}
+        <p class="feature-card-title">{title}</p>
+        <img src={img} alt="feature-card-img" class="feature-card-img">
+        <p class="feature-card-desc">{desc}</p>
+    {:else if imgRight}
         <div class="feature-card-text-container">
             <p class="feature-card-title">{title}</p>
             <p class="feature-card-desc">{desc}</p>
@@ -100,5 +114,40 @@
         font-size: 1.1rem;
         line-height: 1.6;
         color: var(--gray-300);
+    }
+
+    @media (max-width: 768px) {
+        .feature-card {
+            width: 50%;
+            flex-direction: column;
+            text-align: center;
+            gap: 1.75rem;
+            padding: 2rem 1.75rem;
+            min-height: 0;
+        }
+
+        .feature-card img {
+            height: auto;
+            max-height: 12rem;
+            max-width: 80%;
+        }
+
+        .feature-card-title {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 378px) {
+        .feature-card {
+            padding: 1.5rem 1.25rem;
+        }
+
+        .feature-card-title {
+            font-size: 1.65rem;
+        }
+
+        .feature-card-desc {
+            font-size: 1rem;
+        }
     }
 </style>

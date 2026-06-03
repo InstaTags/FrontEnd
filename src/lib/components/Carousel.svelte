@@ -292,4 +292,40 @@
     ul li.active {
         background-color: var(--gray-300);
     }
+
+    @media (max-width: 768px) {
+        .carousel {
+            --card-width: 85vw !important;
+        }
+
+        .slides {
+            margin: 0;
+            transform: translateX(calc((100vw - var(--card-width)) / 2));
+        }
+
+        .slides :global(> div > div) {
+            padding: 0 0.5rem;
+        }
+
+        .shadow-left,
+        .shadow-right {
+            width: 12vw;
+        }
+
+        .left {
+            left: 0.5rem;
+        }
+
+        .right {
+            right: 0.5rem;
+        }
+
+        .shadow-left {
+            background: linear-gradient(to right, #1c1c1c25, #1c1c1c00);
+        }
+
+        .shadow-right {
+            background: linear-gradient(to left, #1c1c1c25, #1c1c1c00);
+        }
+    }
 </style>

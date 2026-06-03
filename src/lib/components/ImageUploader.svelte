@@ -424,4 +424,34 @@
         white-space: nowrap;
     }
 
+    @media (max-width: 768px) {
+        .image-uploader {
+            width: 100%;
+        }
+
+        .file-input-box {
+            padding: 4rem 1.5rem;
+        }
+
+        .result-container {
+            width: 90%;
+            padding: 2rem 1.5rem;
+        }
+    }
+
+    @media (max-width: 378px) {
+        .file-input-box {
+            padding: 3rem 1.25rem;
+        }
+
+        .main-instruction {
+            font-size: 1.1rem;
+        }
+
+        .hashtag-well {
+            padding: 1rem;
+            gap: 0.5rem;
+        }
+    }
+
 </style>

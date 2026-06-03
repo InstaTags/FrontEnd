@@ -75,4 +75,22 @@
         height: auto;
         background: linear-gradient(135deg, var(--primary-400), var(--primary-600));
     }
+
+    @media (max-width: 768px) {
+        .faq-question-container {
+            width: 90%;
+            padding: 0.75rem 1.25rem;
+            font-size: 1.05rem;
+        }
+
+        .faq-answer-container {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 378px) {
+        .faq-question-container {
+            font-size: 1rem;
+        }
+    }
 </style>

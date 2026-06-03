@@ -281,4 +281,72 @@
 		align-items: center;
 		justify-content: center;
 	}
+
+	@media (max-width: 768px) {
+		section {
+			padding: 4rem 0;
+			gap: 1.5rem;
+		}
+
+		.hero {
+			height: auto;
+			min-height: 100dvh;
+			padding: 6rem 1.5rem 4rem;
+			overflow: hidden;
+		}
+
+		.hero-inner-container {
+			width: 100%;
+		}
+
+		.hero-header {
+			font-size: 2.25rem;
+		}
+
+		.hero-desc {
+			width: 90%;
+			max-width: 36rem;
+			font-size: 1.05rem;
+		}
+
+		.hero-btn-container {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.features {
+			padding: 5rem 0;
+			gap: 2.5rem;
+		}
+
+		.features-card-container {
+			gap: 2rem;
+		}
+
+		.testimonials,
+		.faq {
+			padding: 5rem 0;
+		}
+	}
+
+	@media (max-width: 378px) {
+		.hero-header {
+			font-size: 2rem;
+		}
+
+		.hero-desc {
+			font-size: 1rem;
+		}
+
+		.hero-btn-container {
+			flex-direction: column;
+			width: 100%;
+			padding: 0 1.5rem;
+		}
+
+		.hero-btn-container a {
+			width: 100%;
+			justify-content: center;
+		}
+	}
 </style>

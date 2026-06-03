@@ -181,4 +181,11 @@
 		;
 		border-radius: 1.5rem;
 	}
+
+	@media (max-width: 768px) {
+		.how-to-use {
+			height: auto;
+			padding: 7rem 0 4rem;
+		}
+	}
 </style>
