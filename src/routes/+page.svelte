@@ -247,10 +247,12 @@
 	}
 
 	.testimonials {
+		padding: 7rem 0;
 		background-color: #3A4E7226;
 	}
 
 	.faq {
+		padding: 7rem 0;
 		justify-content: flex-start;
 		background: linear-gradient(#3A4E7226, #3A4E7200 17%);
 	}

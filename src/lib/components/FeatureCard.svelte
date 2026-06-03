@@ -78,7 +78,7 @@
 
     .feature-card-title {
         font-family: LaurentianStd-It;
-        font-size: 2rem;
+        font-size: 2.5rem;
         line-height: 1.1;
         background: linear-gradient(
             135deg,

@@ -30,11 +30,11 @@
         background-color: hsla(0, 0%, 11%, 0.35);
         display: flex;
         flex-direction: column;
-        padding: 2rem;
-        gap: 2rem;
-        width: 550px;
-        height: 375px;
-        border-radius: 2rem;
+        padding: 1.7rem;
+        gap: 1.7rem;
+        width: 467px;
+        height: 319px;
+        border-radius: 1.7rem;
     }
 
     .quote-container {
@@ -42,26 +42,26 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 1.25rem;
+        padding: 1.06rem;
         width: 100%;
-        height: 230px;
+        height: 196px;
         box-shadow: var(--general-shadow);
-        gap: 1.25rem;
-        border-radius: 1.25rem;
+        gap: 1.06rem;
+        border-radius: 1.06rem;
     }
 
     .quote-container img {
-        width: 40px;
+        width: 34px;
     }
 
     .quote {
-        font-size: 1.1rem;
+        font-size: 0.935rem;
         font-weight: 400;
     }
 
     .person-container {
         display: flex;
-        gap: 1rem;
+        gap: 0.85rem;
         align-items: center;
     }
 
@@ -71,12 +71,12 @@
     }
 
     .person-name {
-        font-size: 1.75rem;
+        font-size: 1.49rem;
         font-family: LaurentianStd-It;
     }
 
     .person-title {
-        font-size: 1rem;
+        font-size: 0.85rem;
         color: var(--gray-200);
         font-weight: 300;
     }

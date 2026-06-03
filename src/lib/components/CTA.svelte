@@ -2,7 +2,7 @@
 
 </script>
 
-<section class="cta">
+<div class="cta">
 	<h2 class="cta-header gray-gradient-text">
 		Tags Instantly With InstaTags
 	</h2>
@@ -11,7 +11,7 @@
 		<a href="/upload" class="primary-btn">Try Now</a>
 		<a href="/upload" class="outline-btn">Install Extension</a>
 	</div>
-</section>
+</div>
 
 <style>
 	.cta {

@@ -83,7 +83,7 @@
 
 	<div class="how-to-use-inner-container">
 		<div class="how-to-use-switcher-container">
-			<div class="how-to-use-switcher-button" style="transform: translateX({extension ? '0' : '135px'}); transition: transform 0.3s ease;"></div>
+			<div class="how-to-use-switcher-button" style="transform: translateX({extension ? '0' : '110px'}); transition: transform 0.3s ease;"></div>
 			<!-- svelte-ignore a11y_click_events_have_key_events -->
 			<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
 			<p onclick={() => extension = true} style="color: {extension ? '#f7f7f7' : '#c2c2c2'};">Extension</p>
@@ -154,11 +154,11 @@
 	}
 
 	.how-to-use-switcher-container p {
-		width: 135px;
+		width: 110px;
 		text-align: center;
-		padding: 0.75rem;
+		padding: 0.5rem;
 		z-index: 1;
-		font-size: 1.15rem;
+		font-size: 1rem;
 		font-weight: 500;
 		transition: all 0.3s ease;
 		border-radius: 1.5rem;
@@ -173,7 +173,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 135px;
+		width: 110px;
 		height: 100%;
 		background:
 			radial-gradient(circle at 17.5% 0%, #c2c2c226, transparent 35%),
