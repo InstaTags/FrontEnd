@@ -182,7 +182,7 @@
 		left: 50%;
 		translate: -50% -50%;
 		z-index: -1;
-		opacity: 0.075;
+		opacity: 0.1;
 		scale: 1.45;
 	}
 
