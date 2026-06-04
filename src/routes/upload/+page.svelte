@@ -26,7 +26,7 @@
 
 	@media (max-width: 768px) {
 		.upload {
-			padding: 7rem 1.5rem 4rem;
+			padding: 7rem 1rem 4rem;
 		}
 	}
 </style>

@@ -186,8 +186,8 @@
             
             {#if hashtagList.length > 0}
                 <div class="hashtag-container">
-                    <div class="hashtag-container-header">
-                        <p class="hashtag-label">GENERATED TAGS</p>
+                    <div class="hashtag-container-header-container">
+                        <p class="hashtag-container-header">GENERATED TAGS</p>
                         <button
                             type="button"
                             class="hashtag-copy-btn"
@@ -356,7 +356,7 @@
         background: #1c1c1c60;
     }
 
-    .hashtag-container-header {
+    .hashtag-container-header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -367,7 +367,7 @@
         text-transform: uppercase;
     }
 
-    .hashtag-label {
+    .hashtag-container-header {
         color: var(--gray-300);
     }
 
@@ -451,6 +451,15 @@
         .hashtag-well {
             padding: 1rem;
             gap: 0.5rem;
+        }
+
+        .hashtag-copy-btn {
+            padding: 0.3rem 0.5rem;
+            font-size: 0.7rem;
+        }
+
+        .hashtag-container-header {
+            font-size: 0.75rem;
         }
     }
 
