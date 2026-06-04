@@ -236,3 +236,11 @@ section {
     transform: none;
   }
 }
+
+@media (max-width: 420px) {
+  .primary-btn,
+  .outline-btn {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+  }
+}
