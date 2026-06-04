@@ -98,7 +98,7 @@
         }
     }
 
-    @media (max-width: 378px) {
+    @media (max-width: 420px) {
         .testimonial-card {
             padding: 1.25rem;
             gap: 1.25rem;

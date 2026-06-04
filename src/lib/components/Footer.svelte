@@ -203,7 +203,7 @@
 		}
 	}
 
-	@media (max-width: 378px) {
+	@media (max-width: 420px) {
 		.logo {
 			font-size: 1.9rem;
 		}

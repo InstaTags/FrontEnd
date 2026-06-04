@@ -164,7 +164,7 @@
 		}
 	}
 
-	@media (max-width: 378px) {
+	@media (max-width: 420px) {
 		#about-us {
 			padding-top: 7rem;
 		}

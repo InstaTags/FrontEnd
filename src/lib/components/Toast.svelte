@@ -133,7 +133,7 @@
         color: var(--gray-100);
     }
 
-    @media (max-width: 378px) {
+    @media (max-width: 420px) {
         .toast {
             min-width: 0;
             width: calc(100vw - 2rem);

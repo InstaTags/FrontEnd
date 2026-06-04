@@ -96,7 +96,7 @@
         }
     }
 
-    @media (max-width: 378px) {
+    @media (max-width: 420px) {
         .faq-question-container {
             font-size: 1rem;
         }

@@ -266,7 +266,7 @@
 		}
 	}
 
-	@media (max-width: 378px) {
+	@media (max-width: 420px) {
 		.mobile-drawer {
 			width: 60%;
 		}

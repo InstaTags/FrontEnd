@@ -53,7 +53,7 @@
 		}
 	}
 
-	@media (max-width: 378px) {
+	@media (max-width: 420px) {
 		.hero-header {
 			font-size: 2rem;
 		}

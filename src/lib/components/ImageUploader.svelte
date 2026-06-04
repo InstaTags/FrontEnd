@@ -439,7 +439,7 @@
         }
     }
 
-    @media (max-width: 378px) {
+    @media (max-width: 420px) {
         .file-input-box {
             padding: 3rem 1.25rem;
         }

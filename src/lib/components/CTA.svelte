@@ -58,7 +58,7 @@
 		}
 	}
 
-	@media (max-width: 378px) {
+	@media (max-width: 420px) {
 		.cta-header {
 			font-size: 1.85rem;
 		}

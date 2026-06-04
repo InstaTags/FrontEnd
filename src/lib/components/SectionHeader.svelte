@@ -42,7 +42,7 @@
       }
     }
 
-    @media (max-width: 378px) {
+    @media (max-width: 420px) {
       .section-header hr {
         display: none;
       }
